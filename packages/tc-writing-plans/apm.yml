@@ -1,0 +1,12 @@
+name: tc-writing-plans
+version: 0.1.0
+description: "需要为已批准的 spec.md 生成详细实现计划时使用。先做范围检查和文件结构映射，再逐任务拆解（含 TDD 步骤模式），产出合并的 plan.md（整合计划 + 任务步骤）。是 /speckit.plan + /speckit.tasks 的增强替代选项；TDD 步骤模式与 /tc-tdd 对齐。"
+author: lcy
+license: UNLICENSED
+targets:
+- claude
+dependencies:
+  apm: []
+  mcp: []
+includes: auto
+scripts: {}

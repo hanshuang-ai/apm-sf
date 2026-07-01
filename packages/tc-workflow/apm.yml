@@ -1,0 +1,12 @@
+name: tc-workflow
+version: 0.1.0
+description: "需要按项目自定义流程串联多个 tc skill、speckit command、extension command、shell 脚本或人工 gate 时使用。读取 .specify/tc/workflows/*.yml，按阶段检查 requires/produces、处理 gate 和失败策略；只做编排，不重新实现阶段逻辑。"
+author: lcy
+license: UNLICENSED
+targets:
+- claude
+dependencies:
+  apm: []
+  mcp: []
+includes: auto
+scripts: {}

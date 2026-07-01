@@ -1,0 +1,12 @@
+name: tc-systematic-debugging
+version: 0.1.0
+description: "在遇到任何 bug、测试失败或意外行为时，以及在提出修复方案之前使用"
+author: lcy
+license: UNLICENSED
+targets:
+- claude
+dependencies:
+  apm: []
+  mcp: []
+includes: auto
+scripts: {}

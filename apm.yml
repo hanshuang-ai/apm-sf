@@ -1,0 +1,11 @@
+name: tkit-sf
+version: 0.1.0
+description: APM-style source repo generated from tkit
+author: lcy
+targets:
+- claude
+dependencies:
+  apm: []
+  mcp: []
+includes: auto
+scripts: {}

@@ -1,0 +1,12 @@
+name: tc-brownfield-migrate
+version: 0.1.0
+description: "用于为现有功能逆向工程Spec, 从而让功能可以被逐步采用SDD"
+author: lcy
+license: UNLICENSED
+targets:
+- claude
+dependencies:
+  apm: []
+  mcp: []
+includes: auto
+scripts: {}

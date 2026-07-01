@@ -1,0 +1,12 @@
+name: tc-brownfield-bootstrap
+version: 0.1.0
+description: "用于生成针对现有代码库量身定制的 spec-kit 配置"
+author: lcy
+license: UNLICENSED
+targets:
+- claude
+dependencies:
+  apm: []
+  mcp: []
+includes: auto
+scripts: {}

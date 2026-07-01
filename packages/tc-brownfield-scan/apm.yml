@@ -1,0 +1,12 @@
+name: tc-brownfield-scan
+version: 0.1.0
+description: "用于自动发现现有代码库的项目结构、技术栈、框架和架构模式"
+author: lcy
+license: UNLICENSED
+targets:
+- claude
+dependencies:
+  apm: []
+  mcp: []
+includes: auto
+scripts: {}

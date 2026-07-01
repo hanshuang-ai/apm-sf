@@ -1,0 +1,12 @@
+name: tc-tdd
+version: 0.1.0
+description: "在编写实现代码之前，用于实现任何功能或进行 bug 修复时使用"
+author: lcy
+license: UNLICENSED
+targets:
+- claude
+dependencies:
+  apm: []
+  mcp: []
+includes: auto
+scripts: {}

@@ -1,0 +1,12 @@
+name: tc-bugfix-verify
+version: 0.1.0
+description: "用于在 bug 修复补丁之后验证所有规格产物是否一致"
+author: lcy
+license: UNLICENSED
+targets:
+- claude
+dependencies:
+  apm: []
+  mcp: []
+includes: auto
+scripts: {}

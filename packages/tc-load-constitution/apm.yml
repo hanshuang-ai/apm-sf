@@ -1,0 +1,12 @@
+name: tc-load-constitution
+version: 0.1.0
+description: "在SDD项目需要加载或应用宪章时使用。当输入参数为空时，确定性地将默认宪章拷入且注入技术规约指针；当输入参数不为空时，转为调用 tc.constitution 宪章技能来映射加载宪章。"
+author: lcy
+license: UNLICENSED
+targets:
+- claude
+dependencies:
+  apm: []
+  mcp: []
+includes: auto
+scripts: {}

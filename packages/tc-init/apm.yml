@@ -1,0 +1,12 @@
+name: tc-init
+version: 0.1.0
+description: "在当前项目做完整 tc 初始化（项目骨架 + tc-ext-* 扩展 + constitution + tc-* 技能）。当用户想初始化项目、搭建规范驱动开发骨架、或装配 tc 技能时使用。"
+author: lcy
+license: UNLICENSED
+targets:
+- claude
+dependencies:
+  apm: []
+  mcp: []
+includes: auto
+scripts: {}

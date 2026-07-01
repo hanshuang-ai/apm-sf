@@ -1,0 +1,4 @@
+interface:
+  display_name: "TC Req Preprocess"
+  short_description: "Preprocess DOCX specs with UI prototypes and flow diagrams."
+  default_prompt: "Use $tc-req-preprocess to preprocess a DOCX requirements document with embedded UI prototypes or flowchart images and produce findings and revised outputs."

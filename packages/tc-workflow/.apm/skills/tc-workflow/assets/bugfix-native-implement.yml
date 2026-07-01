@@ -1,0 +1,57 @@
+schema: 1
+name: bugfix-native-implement
+description: 切到目标 feature 后，记录 bug、修补规格产物、验证、实现、评审
+
+stages:
+  - id: switch-context
+    kind: skill
+    use: tc-bugfix-switch
+    args: "${arguments}"
+    mode: confirm
+    optional: true
+    on_failure: ask
+
+  - id: report
+    kind: skill
+    use: tc-bugfix-report
+    args: "${arguments}"
+    produces:
+      - bug-report
+
+  - id: patch-artifacts
+    kind: skill
+    use: tc-bugfix-patch
+    requires:
+      - bug-report
+    produces:
+      - spec.md
+      - plan.md
+      - tasks.md
+
+  - id: verify-artifacts
+    kind: skill
+    use: tc-bugfix-verify
+    requires:
+      - spec.md
+    gate:
+      type: pass
+    on_failure: stop
+
+  - id: implement
+    kind: command
+    use: tc.implement
+    requires:
+      - tasks.md
+    produces:
+      - code
+      - tests
+
+  - id: review
+    kind: skill
+    use: tc-review
+    requires:
+      - code
+      - tests
+    gate:
+      type: pass
+    on_failure: ask

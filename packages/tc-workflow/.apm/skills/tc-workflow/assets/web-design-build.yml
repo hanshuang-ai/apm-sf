@@ -1,0 +1,45 @@
+schema: 1
+name: web-design-build
+description: 使用 Visual Companion 做网页设计，再快速实现、评审、E2E
+
+stages:
+  - id: design
+    kind: skill
+    use: tc-brainstorm
+    args: "${arguments}"
+    with:
+      visual_companion: true
+      output: speckit-spec
+    produces:
+      - spec.md
+    gate:
+      type: user-approval
+
+  - id: implement
+    kind: skill
+    use: tc-quick
+    requires:
+      - spec.md
+    mode: auto
+    produces:
+      - plan.md
+      - code
+      - tests
+
+  - id: review
+    kind: skill
+    use: tc-review
+    requires:
+      - code
+      - tests
+    gate:
+      type: pass
+    on_failure: ask
+
+  - id: e2e
+    kind: skill
+    use: tc-e2e
+    optional: true
+    requires:
+      - code
+    on_failure: ask

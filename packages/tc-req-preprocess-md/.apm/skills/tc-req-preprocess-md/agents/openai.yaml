@@ -1,0 +1,4 @@
+interface:
+  display_name: "TC Req Preprocess (Markdown)"
+  short_description: "Convert a DOCX requirements doc into a clean Markdown file with extracted images and structural captions."
+  default_prompt: "Use $tc-req-preprocess-md to convert a DOCX requirements document into Markdown, extracting images into a sibling assets folder and attaching a structural caption to every image."

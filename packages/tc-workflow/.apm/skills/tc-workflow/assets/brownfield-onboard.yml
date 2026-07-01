@@ -1,0 +1,38 @@
+schema: 1
+name: brownfield-onboard
+description: 既有项目接入 tkit/speckit，完成扫描、初始化、迁移和校验
+
+stages:
+  - id: scan
+    kind: skill
+    use: tc-brownfield-scan
+    args: "${arguments}"
+    produces:
+      - brownfield-report
+    gate:
+      type: user-approval
+
+  - id: bootstrap
+    kind: skill
+    use: tc-brownfield-bootstrap
+    requires:
+      - brownfield-report
+    mode: confirm
+    gate:
+      type: user-approval
+    on_failure: ask
+
+  - id: migrate
+    kind: skill
+    use: tc-brownfield-migrate
+    mode: confirm
+    gate:
+      type: user-approval
+    on_failure: ask
+
+  - id: validate
+    kind: skill
+    use: tc-brownfield-validate
+    gate:
+      type: pass
+    on_failure: ask

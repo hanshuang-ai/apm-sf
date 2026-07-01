@@ -1,0 +1,12 @@
+name: tc-review
+version: 0.1.0
+description: "在完成任务、实现重大功能或合并之前使用，以验证工作是否符合要求"
+author: lcy
+license: UNLICENSED
+targets:
+- claude
+dependencies:
+  apm: []
+  mcp: []
+includes: auto
+scripts: {}

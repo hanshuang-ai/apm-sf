@@ -1,0 +1,56 @@
+schema: 1
+name: native-speckit-review
+description: 原生 speckit specify-clarify-plan-tasks-implement 后追加评审
+
+stages:
+  - id: specify
+    kind: command
+    use: tc.specify
+    args: "${arguments}"
+    produces:
+      - spec.md
+
+  - id: clarify
+    kind: command
+    use: tc.clarify
+    requires:
+      - spec.md
+    produces:
+      - spec.md
+    gate:
+      type: user-approval
+
+  - id: plan
+    kind: command
+    use: tc.plan
+    requires:
+      - spec.md
+    produces:
+      - plan.md
+
+  - id: tasks
+    kind: command
+    use: tc.tasks
+    requires:
+      - plan.md
+    produces:
+      - tasks.md
+
+  - id: implement
+    kind: command
+    use: tc.implement
+    requires:
+      - tasks.md
+    produces:
+      - code
+      - tests
+
+  - id: review
+    kind: skill
+    use: tc-review
+    requires:
+      - code
+      - tests
+    gate:
+      type: pass
+    on_failure: ask

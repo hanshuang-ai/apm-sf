@@ -1,0 +1,12 @@
+name: tc-quick
+version: 0.1.0
+description: "小功能快速开发，可只给一句需求直接开干。已有 spec.md 时基于它生成精简的「计划+任务」合并文件 plan.md；spec.md 缺失且提供了需求时，自动调用 tc-specify 创建 spec 后继续；随后全自动逐任务执行（强制 TDD）。适用于无需分阶段评审的小功能；复杂功能仍用 /tc-flow 或原生四命令。"
+author: lcy
+license: UNLICENSED
+targets:
+- claude
+dependencies:
+  apm: []
+  mcp: []
+includes: auto
+scripts: {}

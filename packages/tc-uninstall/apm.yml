@@ -1,0 +1,12 @@
+name: tc-uninstall
+version: 0.1.0
+description: "回收当前项目里 tc init 装入的产物（tc-* 技能、tkit 扩展、constitution 副本）。当用户想卸载 tc、清理 tc init 产物或移除规范驱动骨架时使用。"
+author: lcy
+license: UNLICENSED
+targets:
+- claude
+dependencies:
+  apm: []
+  mcp: []
+includes: auto
+scripts: {}

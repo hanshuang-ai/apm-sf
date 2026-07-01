@@ -1,0 +1,12 @@
+name: tc-req-preprocess
+version: 0.1.0
+description: "在审查包含嵌入式 UI 原型、流程图图像或审批流图表的 `.docx` 需求文档时使用，特别是在 Codex 必须评估需求质量、确定文本是否充分描述了每个图像、补充缺失或薄弱的解释，并交付修改后的 `.docx` 副本和书面审查报告时。"
+author: lcy
+license: UNLICENSED
+targets:
+- claude
+dependencies:
+  apm: []
+  mcp: []
+includes: auto
+scripts: {}

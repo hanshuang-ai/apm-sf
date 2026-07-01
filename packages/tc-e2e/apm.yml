@@ -1,0 +1,12 @@
+name: tc-e2e
+version: 0.1.0
+description: "使用 Playwright 生成并运行端到端测试。创建测试路径、运行测试、捕获屏幕截图/视频/跟踪，并上传产物。"
+author: lcy
+license: UNLICENSED
+targets:
+- claude
+dependencies:
+  apm: []
+  mcp: []
+includes: auto
+scripts: {}

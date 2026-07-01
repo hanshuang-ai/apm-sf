@@ -1,0 +1,12 @@
+name: tc-flow
+version: 0.1.0
+description: "在需要把一个功能从需求描述一路跑到实现、且希望每步停下来人工确认时使用。按 specify → plan → tasks → implement 顺序串联四个核心命令，每步产物落盘后暂停等待确认再进下一步，支持中断后续跑。"
+author: lcy
+license: UNLICENSED
+targets:
+- claude
+dependencies:
+  apm: []
+  mcp: []
+includes: auto
+scripts: {}

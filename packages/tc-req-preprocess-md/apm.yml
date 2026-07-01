@@ -1,0 +1,12 @@
+name: tc-req-preprocess-md
+version: 0.1.0
+description: "在将包含嵌入式 UI 原型、流程图图像和表格的 `.docx` 需求文档转换为下游工具和 LLM 可以直接消费的干净 Markdown 文档时使用。它按顺序提取结构、表格和图像，编写一个自包含的 `.md` 以及一个资源文件夹，并为每个图像附加结构化说明，以便读者无需打开原始文件即可理解。"
+author: lcy
+license: UNLICENSED
+targets:
+- claude
+dependencies:
+  apm: []
+  mcp: []
+includes: auto
+scripts: {}

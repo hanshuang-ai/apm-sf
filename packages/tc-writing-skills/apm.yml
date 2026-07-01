@@ -1,0 +1,12 @@
+name: tc-writing-skills
+version: 0.1.0
+description: "Use when creating new skills, editing existing skills, or verifying skills work before deployment"
+author: lcy
+license: UNLICENSED
+targets:
+- claude
+dependencies:
+  apm: []
+  mcp: []
+includes: auto
+scripts: {}

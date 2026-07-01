@@ -1,0 +1,12 @@
+name: tc-bugfix-patch
+version: 0.1.0
+description: "用于精准更新 spec.md、plan.md 和 tasks.md 以解决报告的 bug"
+author: lcy
+license: UNLICENSED
+targets:
+- claude
+dependencies:
+  apm: []
+  mcp: []
+includes: auto
+scripts: {}

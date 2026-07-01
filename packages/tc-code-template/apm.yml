@@ -1,0 +1,12 @@
+name: tc-code-template
+version: 0.1.0
+description: "获取云端管理平台代码模板。从远程 COS 存储下载 AutoPai 代码模板压缩包，解压到当前工作目录，并删除临时 zip 文件。用于快速初始化项目代码骨架。"
+author: lcy
+license: UNLICENSED
+targets:
+- claude
+dependencies:
+  apm: []
+  mcp: []
+includes: auto
+scripts: {}

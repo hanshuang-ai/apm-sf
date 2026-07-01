@@ -1,0 +1,25 @@
+schema: 1
+name: brainstorm-quick
+description: 深度设计并批准 spec.md 后，快速自动实现
+
+stages:
+  - id: design
+    kind: skill
+    use: tc-brainstorm
+    args: "${arguments}"
+    produces:
+      - spec.md
+    gate:
+      type: user-approval
+
+  - id: implement
+    kind: skill
+    use: tc-quick
+    requires:
+      - spec.md
+    mode: auto
+    produces:
+      - plan.md
+      - code
+      - tests
+    on_failure: stop
