@@ -1,5 +1,5 @@
 name: tc-brainstorm
-version: 0.1.0
+version: 0.2.0
 description: "需要深度脑暴设计一个功能时使用。探索项目上下文、逐步澄清需求、提出 2-3 种方案并附带权衡对比、逐节审批后写出 spec-kit 标准的 spec.md。批准后交给 /tc-quick 快速计划并实现。"
 author: lcy
 license: UNLICENSED
